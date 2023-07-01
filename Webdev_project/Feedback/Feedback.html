@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../Header.css">
+    <link rel="stylesheet" href="Feedback.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="main" id="logo">
+          <a href="../Home/Homepage.html">Spriezz</a>
+        </div>
+        <div class="main" id="cart_link">
+          <a href="../ShoppingCart/Cart.html"><img src="../Image/cart.jpg" alt=""> </a>
+        </div>
+        <ul>
+          <li id="desktop">
+            <div class="main">
+              <a href="../Desktop/Desktop.html">Desktop</a>
+            </div>
+            <div class="dropdown">
+              <p><a href="../Desktop/Desktop.html#slash">Slashed Series</a></p>
+              <p><a href="../Desktop/Desktop.html#water">Watercooled Series</a></p>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
+        </div>
+      </nav>
+    </header>
+    <div class="form">
+      <p class="title">Feedback Form</p>
+      <hr>
+      <form action="Processor.html" method="get">
+        <p>How would you rate your experience in this website? <br> (1-Very Bad, 7-Very Good)</p><br>
+        <div id="rating">
+          <label class="ratings"><input type="radio" name="rating" value="1" class="rating" required><span class="checkbox">1</span></label>
+          <label class="ratings"><input type="radio" name="rating" value="2" class="rating" required><span class="checkbox">2</span></label>
+          <label class="ratings"><input type="radio" name="rating" value="3" class="rating" required><span class="checkbox">3</span></label>
+          <label class="ratings"><input type="radio" name="rating" value="4" class="rating" required><span class="checkbox">4</span></label>
+          <label class="ratings"><input type="radio" name="rating" value="5" class="rating" required><span class="checkbox">5</span></label>
+          <label class="ratings"><input type="radio" name="rating" value="6" class="rating" required><span class="checkbox">6</span></label>
+          <label class="ratings"><input type="radio" name="rating" value="7" class="rating" required><span class="checkbox">7</span></label>
+        </div>
+
+        <br><br>
+        <p>Do you have any suggestions on where we can improve?</p>
+        <br>
+        <div id="suggestions">
+          <textarea name="suggestions" placeholder="Suggestions" required></textarea>
+        </div>
+        <hr>
+        <p class="header">Personal particulars</p>
+
+        <div id="name">
+        <p class="inline">Your Name: </p>
+        <label><input type="text" name="name" placeholder="Name" required></label>
+      </div>
+        <div id="gender">
+        <p class="inline">Your Gender: </p>
+        <label><input type="radio" name="gender" value="male" required>Male</label>
+        <label><input type="radio" name="gender" value="female" required>Female</label>
+        </div>
+
+        <div id="age">
+          <p class="inline">Age:</p>
+          <input type="number" name="age" min="12" max="120" placeholder="Age" title="Your age before birthday" required>
+        </div>
+
+
+        <div id="prefered mode of contact">
+          <p class="header">Contacts</p>
+          <p class="inline">Prefered mode of contact:</p>
+          <label class="mode"><input type="radio" name="prefered mode of contact" value="phone" required>Phone</label>
+          <label class="mode"><input type="radio" name="prefered mode of contact" value="email" required>Email</label>
+        </div>
+
+        <div id="phone number">
+          <p class="inline">Phone Number:</p>
+          <label><input type="text" name="phone number" placeholder="Phone Number" title="8 digits telephone number" pattern="\d{8}" required></label>
+        </div>
+        <div id="email">
+          <p class="inline">Email:</p>
+          <label><input type="email" name="email" placeholder="example@gmail.com" required></label>
+        </div>
+
+        <div id="subscribe">
+          <label>
+          <input type="checkbox" name="subscribe" value="yes">
+          <p class="inline">Recive email on out latest promotions and products</p>
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="Feedback.js" charset="utf-8"></script>
+    <script src="../Header.js" charset="utf-8"></script>
+  </body>
+</html>

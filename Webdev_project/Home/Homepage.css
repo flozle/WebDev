@@ -1,0 +1,167 @@
+body {
+  background-color: black;
+}
+
+
+/* Slideshow */
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  top: 52px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* links */
+div.links table {
+  width: 100%
+}
+
+div.links th {
+  color: white;
+  width: 33%;
+  font-size: 1.5em;
+}
+
+div.links a {
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* successes */
+div#successes {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+div#successes table {
+  width: 100%;
+}
+
+div#successes p.title {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+
+div#successes th {
+  color: white;
+  width: 25%;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+div#successes td {
+  color: white;
+  width: 25%;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+/* about */
+div#about {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+}
+
+div#about table {
+  width: 100%;
+}
+
+div#about p.title {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  font-weight: bold;
+}
+
+div#about table {
+  width: 100%;
+}
+
+div#about td {
+  color: white;
+  width: 50%;
+  vertical-align: top;
+}
+
+div#about p.header {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+img.img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+img.links {
+  width: 50%;
+}

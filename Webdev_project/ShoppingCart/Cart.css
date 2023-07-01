@@ -1,0 +1,178 @@
+body {
+    background-color: black;
+}
+
+div.body {
+  margin-top: 75px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+p {
+  color: white;
+  line-height: 2em;
+}
+
+div#cart .hide {
+  display: none;
+}
+
+div.body p.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+hr {
+  background-color: red;
+  height: 2px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+div#cart button.decrease, button.increase, p.amount, p.amounts {
+  display: inline-block;
+}
+
+p.name {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+button:hover {
+  background-color: #1A1A1A;
+}
+
+/* table */
+table#shopping_cart {
+  width: 100%;
+}
+
+td#con_cart{
+  width: 80%;
+}
+
+div#cart table {
+  width: 100%;
+}
+
+div#cart tr.left {
+  display: inline-block;
+  width: 30%;
+}
+
+div#cart td.left {
+  width: 100%;
+}
+
+
+div#cart tr.right {
+  width: 100%;
+  vertical-align: top;
+}
+
+div#cart tr.right{
+  width: 70%;
+  display: inline-block;
+}
+
+/* subtotal */
+td#payment {
+  width: 20%;
+  vertical-align: top;
+  text-align: center;
+}
+
+span.white {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+/* amount */
+div#cart p.amount {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* checkout */
+body a#checkout {
+  text-decoration: none;
+  background-color: green;
+  color: black;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* continue shopping */
+body a.link {
+  text-decoration: none;
+  color: grey;
+  font-size: 0.7em;
+}
+
+/* no items */
+div.no_items p{
+  color: white;
+  text-align: center;
+}
+
+div.no_items hr {
+  text-align: center;
+  width: 25%;
+  margin: auto;
+}
+
+div.no_items p.link {
+  margin-top: 20px;
+}
+
+div.no_items a.link {
+  font-size: 1.2em;
+  border-radius: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-style: solid;
+  border-color: grey;
+  color: white;
+  transition: 300ms;
+}
+
+div.no_items a.link:hover {
+  background-color: grey;
+}
+
+@media screen and (max-width: 1200px) {
+  div#cart tr.right, div#cart tr.left{
+    display: block;
+    width: 100%
+  }
+
+  div td#con_cart {
+    width: 70%;
+  }
+
+  div td#payment {
+    width: 30%;
+  }
+}

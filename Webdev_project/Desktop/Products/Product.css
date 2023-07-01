@@ -1,0 +1,122 @@
+body {
+  background-color: black;
+}
+
+p.title {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* warranty */
+label {
+  color: white;
+}
+
+div#cost {
+  color: white
+}
+
+/* box up each div */
+div#computer div {
+  background-color: #1A1A1A;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  margin-left: 2%;
+  margin-right: 30%;
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+}
+
+/* header */
+div#computer p.heading {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* cost */
+div#computer p.cost {
+  color: green;
+  margin-left: 20px;
+}
+
+/* changes cursor when hovering over input */
+div#computer label:hover, div#computer input:hover {
+  cursor: pointer;
+}
+
+/* title */
+p.title {
+   color: white;
+   margin-top: 75px;
+   font-weight: bold;
+   font-size: 3em;
+}
+
+/* cost */
+div#right {
+  float: right;
+  margin-right: 7%;
+  right: 0px;
+  transition: 2000ms;
+}
+
+div#right img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#right p.total_cost {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+div#right p {
+  text-align: center;
+}
+
+div#right a {
+  color: white;
+  text-decoration: none;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-style: solid;
+  font-size: 1.2em;
+}
+
+div#right a:hover {
+  background-color: #1A1A1A;
+}
+
+.na {
+  color: grey;
+}
+
+.na::after {
+  content: "Not Compatible";
+  color: red;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  div#right {
+    position: static;
+    float: none;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  div#computer div {
+    margin-right: 2%;
+  }
+}

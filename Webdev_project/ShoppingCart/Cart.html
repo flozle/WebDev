@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../Header.css">
+    <link rel="stylesheet" href="Cart.css">
+  </head>
+  <body onload="display(); check()">
+    <header>
+      <nav>
+        <div class="main" id="logo">
+          <a href="../Home/Homepage.html">Spriezz</a>
+        </div>
+        <div class="main" id="cart_link">
+          <a href="../ShoppingCart/Cart.html"><img src="../Image/cart.jpg" alt=""> </a>
+        </div>
+        <ul>
+          <li id="desktop">
+            <div class="main">
+              <a href="../Desktop/Desktop.html">Desktop</a>
+            </div>
+            <div class="dropdown">
+              <p><a href="../Desktop/Desktop.html#slash">Slashed Series</a></p>
+              <p><a href="../Desktop/Desktop.html#water">Watercooled Series</a></p>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- starting -->
+    <div class="body">
+      <p class="title">Shopping Cart</p>
+      <hr>
+      <table id="shopping_cart">
+        <tr>
+          <td id="con_cart">
+            <div id="cart">
+            </div>
+          </td>
+          <td id="payment">
+            <button type="button" class="delete" onclick="delall()">Delete All</button>
+            <p>Subtotal: <br> <span class="white">SGD $<span id="sub_total"></span</span>></p>
+            <p><a href="" id="checkout" onclick="purchase()">Purchase</a></p>
+            <p><a href="../Home/Homepage.html" class="link">Continue Shopping</a></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="Cart.js" charset="utf-8"></script>
+    <script src="../Header.js" charset="utf-8"></script>
+  </body>
+</html>

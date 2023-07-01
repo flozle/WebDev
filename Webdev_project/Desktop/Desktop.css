@@ -1,0 +1,157 @@
+body {
+  background-color: black;
+}
+
+div.body {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 50px;
+}
+
+img.img {
+  width: 100%;
+}
+
+body p.title {
+  color: white;
+  font-size: 4em;
+}
+
+/* Table */
+div.body table {
+  width: 100%;
+}
+
+/* Series */
+div.body tr.series {
+  display: inline-block;
+  width: 30%;
+}
+
+div.body tr.series th{
+  max-width: 100%;
+  text-align: center;
+}
+
+div.body th {
+  max-width: 290px;
+}
+
+#slashed {
+  font-size: 3em;
+}
+
+#watercooled {
+  font-size: 2.3em;
+}
+
+/* Series content */
+div.body th, div.body td {
+  display: block;
+  color: white;
+}
+
+div.body tr.content {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
+
+div.body td.heading {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+div.body td.body {
+  font-size: 1.2em;
+}
+
+/* products */
+div.products table{
+  width: 25%;
+  height: auto;
+  border-style: solid;
+  border-collapse: collapse;
+}
+
+div.products {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+}
+
+div.products p {
+  color: white;
+
+}
+
+div.products p.name {
+  font-size: 2em;
+  text-align: center;
+  background-color: #1A1A1A;
+  padding: 5px;
+}
+
+div.products img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div.products p.from {
+  color: grey;
+  margin-left: 8%;
+}
+
+div.products p.cost {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+div.products p.link {
+  text-align: center;
+}
+
+div.products a {
+  color: white;
+  text-decoration: none;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-style: solid;
+}
+
+div.products a:hover {
+  background-color: #1A1A1A;
+}
+
+div.products div.stats {
+  line-height: 20px;
+  background-color: #1A1A1A;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 8%;
+  font-size: 0.8em;
+}
+
+div.products p.stats {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1250px)  {
+  div.body tr.series, div.body tr.content {
+    width: 100%;
+  }
+
+  div.body tr.content {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+}

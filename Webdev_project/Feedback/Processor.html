@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../Header.css">
+    <link rel="stylesheet" href="Processor.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="main" id="logo">
+          <a href="../Home/Homepage.html">Spriezz</a>
+        </div>
+        <div class="main" id="cart_link">
+          <a href="../ShoppingCart/Cart.html"><img src="../Image/cart.jpg" alt=""> </a>
+        </div>
+        <ul>
+          <li id="desktop">
+            <div class="main">
+              <a href="../Desktop/Desktop.html">Desktop</a>
+            </div>
+            <div class="dropdown">
+              <p><a href="../Desktop/Desktop.html#slash">Slashed Series</a></p>
+              <p><a href="../Desktop/Desktop.html#water">Watercooled Series</a></p>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
+        </div>
+      </nav>
+    </header>
+
+
+    <div id="body">
+    <div id="checking">
+      <p class="title">Please Check Your Inputs</p>
+      <hr>
+      <div id="data">
+      </div>
+      <button type="button" onclick="verification()">Confirm</button>
+      <p class="link"><a onclick="edit()" id="edit" href="" >Edit</a></p>
+    </div>
+    <div id="ver" class="display">
+      <hr>
+      <p>Thank You <span id="name"></span> for your input! <br> <span id="rating"></span></p>
+      <hr>
+    </div>
+    </div>
+    <script src="../Header.js" charset="utf-8"></script>
+    <script src="Processor.js" charset="utf-8"></script>
+  </body>
+</html>

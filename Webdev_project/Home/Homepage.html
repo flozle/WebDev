@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="../Header.css">
+  <link rel="stylesheet" href="Homepage.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="main" id="logo">
+        <a href="../Home/Homepage.html">Spriezz</a>
+      </div>
+      <div class="main" id="cart_link">
+        <a href="../ShoppingCart/Cart.html"><img src="../Image/cart.jpg" alt=""> </a>
+      </div>
+      <ul>
+        <li id="desktop">
+          <div class="main">
+            <a href="../Desktop/Desktop.html">Desktop</a>
+          </div>
+          <div class="dropdown">
+            <p><a href="../Desktop/Desktop.html#slash">Slashed Series</a></p>
+            <p><a href="../Desktop/Desktop.html#water">Watercooled Series</a></p>
+          </div>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <div class="bars1"></div>
+        <div class="bars2"></div>
+        <div class="bars3"></div>
+      </div>
+    </nav>
+  </header>
+
+<!-- slideshow -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <a href="../Desktop/Desktop.html"><img src="..\Image\slideshow1.jpg" style="width:100%"></a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="../Feedback/Feedback.html"><img src="..\Image\slideshow2.jpg" style="width:100%"></a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="#about"><img src="..\Image\slideshow3.jpg" style="width:100%"></a>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br><br><br>
+
+  <div class="dots" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script src="Homepage.js" charset="utf-8"></script>
+
+  <br><br><br>
+<!-- links -->
+  <div class="links">
+    <table>
+      <tr>
+        <th>Desktop</th>
+        <th>About Us</th>
+        <th>Feedback</th>
+      </tr>
+      <tr>
+        <th><img src="../Image/desktop.jpg" alt="" class="links"> </th>
+        <th><img src="../Image/aboutus1.jpg" alt="" class="links"> </th>
+        <th><img src="../Image/feedback.jpg" alt="" class="links"> </th>
+      </tr>
+      <tr>
+        <th><a href="../Desktop/Desktop.html">Shop Now</a> </th>
+        <th><a href="#about">See Now</a> </th>
+        <th><a href="../Feedback/Feedback.html">Do Now</a> </th>
+      </tr>
+    </table>
+  </div>
+
+<br><br><br>
+<!-- successes -->
+  <div id="successes">
+    <p class="title">Benefits</p>
+    <table>
+      <tr>
+        <th><img src="../Image/comment.jpg" alt="" class="links"> </th>
+        <th><img src="../Image/performance.jpg" alt="" class="links"> </th>
+        <th><img src="../Image/waranty.jpg" alt="" class="links"> </th>
+        <th><img src="../Image/affordability.jpg" alt="" class="links"> </th>
+      </tr>
+      <tr>
+        <td>Over 50,000<br>happy customers</td>
+        <td>Award winning<br>performance</td>
+        <td>3 Years warranty</td>
+        <td>Affordable prices</td>
+      </tr>
+    </table>
+  </div>
+
+<br><br><br>
+<!-- about us -->
+<div id="about">
+  <p class="title">ABOUT US</p>
+  <br>
+  <table>
+    <tr>
+      <td><img src="../Image/aboutus.jpg" alt="" class="img"></td>
+      <td>
+        <p class="header">Our Story</p>
+        <br>
+        <p class="content">
+          During 2015 3 computer enthusiasts and gamers got together and decided to make a custom PC company called Spriezz.
+          We started off selling custom PC commisions in Shopee, and eventually we are able to expend out company.
+          We now sell custom PC, custom keyboard with our products increasing.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="header">Spriezz Experince</p>
+        <br>
+        <p class="content">
+          Our aim is to provide the best there is in the market.
+          To achive this, all our our employees have undergone extensive training to provide the best for you.
+          Our customer service is first to none, with our turn around time being less than one working day.
+          Our before sales team try understands what you need and suggest relevent products to you.
+        </p>
+      </td>
+      <td><img src="../Image/aboutus2.jpg" alt="" class="img"></td>
+    </tr>
+  </table>
+</div>
+
+  <script src="../Header.js" charset="utf-8"></script>
+</body>
+</html>

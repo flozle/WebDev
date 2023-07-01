@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Turbo</title>
+        <link rel="stylesheet" href="../../Header.css">
+        <link rel="stylesheet" href="Product.css">
+  </head>
+  <body onload="update(); amd(); intel(); scroll();" onscroll="scroll();" onresize="scroll()">
+    <header>
+      <nav>
+        <div class="main" id="logo">
+          <a href="../../Home/Homepage.html">Spriezz</a>
+        </div>
+        <div class="main" id="cart_link">
+          <a href="../../ShoppingCart/Cart.html"><img src="../../Image/cart.jpg" alt=""> </a>
+        </div>
+        <ul>
+          <li id="desktop">
+            <div class="main">
+              <a href="../../Desktop/Desktop.html">Desktop</a>
+            </div>
+            <div class="dropdown">
+              <p><a href="../../Desktop/Desktop.html#slash">Slashed Series</a></p>
+              <p><a href="../../Desktop/Desktop.html#water">Watercooled Series</a></p>
+            </div>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
+        </div>
+      </nav>
+    </header>
+
+
+    <p class="title">Customise Your Machine</p>
+
+    <div id="right" style="position: absolute; top: 200px;">
+      <img src="../../Image/Turbo.jpg" alt="">
+      <p class="total_cost">SGD <span id="cost">0</span></p>
+      <br>
+      <p class="link"><a href="../../ShoppingCart/Cart.html" onclick="process()">Add to Cart</a></p>
+    </div>
+
+      <div id="computer">
+      <div id="warranty">
+        <p class="heading">Warranty</p>
+        <label><input checked cost="20" type="radio" name="warranty" onclick="update()" value="3 Years Parts Warranty (1st Year Onsite Pickup and Return)">3 Years Parts Warranty (1st Year Onsite Pickup and Return)
+        <p class="cost"></p></label><br>
+        <label><input cost="110" type="radio" name="warranty" onclick="update()" value="3 Years Parts Warranty (Onsite Pickup and Return)">3 Years Parts Warranty (Onsite Pickup and Return)
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="chasis" class="Turbo" name="Turbo">
+        <p class="heading">Chasis</p>
+        <label><input cost="100" checked type="radio" name="chasis" onclick="update()" value="Inspire K2 ARGB (Black)">Inspire K2 ARGB (Black)
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="cpu" class="amd">
+        <p class="heading">CPU (Processer)</p>
+        <label><input cost="160" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 5 3600 | 4.2 GHZ | 6 Cores 12 Threads">AMD RYZEN 5 3600 | 4.2 GHZ | 6 Cores 12 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="200" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 5 5500 | 4.2 GHZ | 6 Cores 12 Threads">AMD RYZEN 5 5500 | 4.2 GHZ | 6 Cores 12 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="270" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 5 5600 | 4.4 GHZ | 6 Cores 12 Threads">AMD RYZEN 5 5600 | 4.4 GHZ | 6 Cores 12 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="315" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 5 5600X | 4.6 GHZ | 6 Cores 12 Threads">AMD RYZEN 5 5600X | 4.6 GHZ | 6 Cores 12 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="500" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 7 5800X | 4.7 GHZ | 8 Cores 16 Threads">AMD RYZEN 7 5800X | 4.7 GHZ | 8 Cores 16 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="685" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 9 5900X | 4.8 GHZ | 12 Cores 24 Threads">AMD RYZEN 9 5900X | 4.8 GHZ | 12 Cores 24 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="800" type="radio" name="cpu" onclick="amd(); update()" value="AMD RYZEN 9 5950X | 4.9 GHZ | 16 Cores 32 Threads">AMD RYZEN 9 5950X | 4.9 GHZ | 16 Cores 32 Threads
+        <p class="cost"></p></label><br>
+
+
+        <label><input cost="190" type="radio" name="cpu" onclick="intel(); update()" value="Intel® Core™ i3-12100F | 4.3 GHZ | 4 Cores 8 Threads">Intel® Core™ i3-12100F | 4.3 GHZ | 4 Cores 8 Threads
+        <p class="cost"></p></label><br>
+        <label><input checked cost="240" type="radio" name="cpu" onclick="intel(); update()" value="Intel® Core™ i5-12400F | 4.4 GHZ | 6 Cores 12 Threads">Intel® Core™ i5-12400F | 4.4 GHZ | 6 Cores 12 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="335" type="radio" name="cpu" onclick="intel(); update()" value="Intel® Core™ i5-12400 | 4.4 GHZ | 6 Cores 12 Threads">Intel® Core™ i5-12400 | 4.4 GHZ | 6 Cores 12 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="525" type="radio" name="cpu" onclick="intel(); update()" value="Intel® Core™ i5-12600KF | 4.8 GHZ | 10 Cores 16 Threads">Intel® Core™ i5-12600KF | 4.8 GHZ | 10 Cores 16 Threads
+        <p class="cost"></p></label><br>
+        <label><input cost="590" type="radio" name="cpu" onclick="intel(); update()" value="Intel® Core™ i7-12700KF | 5.0 GHZ | 12 Cores 20 Threads">Intel® Core™ i7-12700KF | 5.0 GHZ | 12 Cores 20 Threads
+        <p class="cost"></p></label><br>
+      </div>
+
+
+      <div id="motherboard">
+        <p class="heading">Motherboard</p>
+        <label class="amd"><input cost="180" type="radio" class="defult" onclick="update()" name="motherboard" value="For AMD - GIGABYTE B550M DS3H AC">For AMD - GIGABYTE B550M DS3H AC
+        <p class="cost"></p></label><br>
+        <label class="amd"><input cost="275" type="radio" name="motherboard" onclick="update()" value="For AMD - ASUS B550M TUF Plus Gaming AX">For AMD - ASUS B550M TUF Plus Gaming AX
+        <p class="cost"></p></label><br>
+
+
+        <label class="intel"><input checked cost="260" type="radio" class="defult" name="motherboard" onclick="update()" value="For Intel - GIGABYTE B660M DS3H AX DDR4">For Intel - GIGABYTE B660M DS3H AX DDR4
+        <p class="cost"></p></label><br>
+        <label class="intel"><input cost="280" type="radio" name="motherboard" onclick="update()" value="For Intel - GIGABYTE B660M GAMING X AX DDR4">For Intel - GIGABYTE B660M GAMING X AX DDR4
+        <p class="cost"></p></label><br>
+        <label class="intel"><input cost="300" type="radio" name="motherboard onclick="update()"" value="For Intel - ASROCK B660M Steel Legend">For Intel - ASROCK B660M Steel Legend
+        <p class="cost"></p></label><br>
+        <label class="intel"><input cost="410" type="radio" name="motherboard" onclick="update()" value="For Intel - GIGABYTE Z690M AORUS ELITE DDR4">For Intel - GIGABYTE Z690M AORUS ELITE DDR4
+        <p class="cost"></p></label><br>
+      </div>
+
+
+      <div id="gpu">
+        <p class="heading">GPU (Graphics Card)</p>
+        <label><input cost="280" type="radio" name="gpu" onclick="update()" value="ZOTAC GTX 1650 LP 4GB">ZOTAC GTX 1650 LP 4GB
+        <p class="cost"></p></label><br>
+        <label><input cost="485" type="radio" name="gpu" onclick="update()" value="GIGABYTE RTX 3050 Eagle 8GB">GIGABYTE RTX 3050 Eagle 8GB
+        <p class="cost"></p></label><br>
+        <label><input checked cost="585" type="radio" name="gpu" onclick="update()" value="ZOTAC RTX 3060 Twin Edge 12GB">ZOTAC RTX 3060 Twin Edge 12GB
+        <p class="cost"></p></label><br>
+        <label><input cost="710" type="radio" name="gpu" onclick="update()" value="GIGABYTE RTX 3060 VISION OC 12GB (Full White Card">GIGABYTE RTX 3060 VISION OC 12GB (Full White Card)
+        <p class="cost"></p></label><br>
+        <label><input cost="875" type="radio" name="gpu" onclick="update()" value="ZOTAC RTX 3070 Twin Edge OC 8GB">ZOTAC RTX 3070 Twin Edge OC 8GB
+        <p class="cost"></p></label><br>
+        <label><input cost="930" type="radio" name="gpu" onclick="update()" value="ZOTAC RTX 3070 Twin Edge OC 8GB (Full White Card)">ZOTAC RTX 3070 Twin Edge OC 8GB (Full White Card)
+        <p class="cost"></p></label><br>
+        <label><input cost="1175" type="radio" name="gpu" onclick="update()" value="ZOTAC RTX 3080 Trinity OC 10GB">ZOTAC RTX 3080 Trinity OC 10GB
+        <p class="cost"></p></label><br>
+        <label><input cost="1280" type="radio" name="gpu" onclick="update()" value="ZOTAC RTX 3080 Trinity OC 10GB (Full White Card)">ZOTAC RTX 3080 Trinity OC 10GB (Full White Card)
+        <p class="cost"></p></label><br>
+        <label><input cost="2580" type="radio" name="gpu" onclick="update()" value="EVGA RTX 3090 FTW3 Ultra 24GB">EVGA RTX 3090 FTW3 Ultra 24GB
+        <p class="cost"></p></label><br>
+        <label><input cost="2680" type="radio" name="gpu" onclick="update()" value="ZOTAC RTX 3090Ti AMP EXTREME HOLO">ZOTAC RTX 3090Ti AMP EXTREME HOLO
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="ram">
+        <p class="heading">Random Access Memory (RAM)</p>
+        <label><input checked cost="150" type="radio" name="ram" onclick="update()" value="16GB Klevv BOLT XR 3600 Mhz (8x2)">16GB Klevv BOLT XR 3600 Mhz (8x2)
+        <p class="cost"></p></label><br>
+        <label><input cost="275" type="radio" name="ram" onclick="update()" value="32GB Klevv BOLT XR 3600 Mhz (16x2)">32GB Klevv BOLT XR 3600 Mhz (16x2)
+        <p class="cost"></p></label><br>
+        <label><input cost="535" type="radio" name="ram" onclick="update()" value="64GB Klevv BOLT XR 3600 Mhz (16x4)">64GB Klevv BOLT XR 3600 Mhz (16x4)
+        <p class="cost"></p></label><br>
+        <label><input cost="190" type="radio" name="ram" onclick="update()" value="16GB Klevv CRAS X 3600 Mhz (8x2)">16GB Klevv CRAS X 3600 Mhz (8x2)
+        <p class="cost"></p></label><br>
+        <label><input cost="285" type="radio" name="ram" onclick="update()" value="32GB Klevv CRAS X 3600 Mhz (16x2)">32GB Klevv CRAS X 3600 Mhz (16x2)
+        <p class="cost"></p></label><br>
+        <label><input cost="565" type="radio" name="ram" onclick="update()" value="64GB Klevv CRAS X 3600 Mhz (16x4)">64GB Klevv CRAS X 3600 Mhz (16x4)
+        <p class="cost"></p></label><br>
+        <label><input cost="205" type="radio" name="ram" onclick="update()" value="16GB Corsair Vengeance RGB PRO SL 3600 Mhz (8x2)">16GB Corsair Vengeance RGB PRO SL 3600 Mhz (8x2)
+        <p class="cost"></p></label><br>
+        <label><input cost="290"  type="radio" name="ram" onclick="update()" value="32GB Corsair Vengeance RGB PRO SL 3600 Mhz (16x2)">32GB Corsair Vengeance RGB PRO SL 3600 Mhz (16x2)
+        <p class="cost"></p></label><br>
+        <label><input cost="635" type="radio" name="ram" onclick="update()" value="64GB Corsair Vengeance RGB PRO SL 3600 Mhz (16x4)">64GB Corsair Vengeance RGB PRO SL 3600 Mhz (16x4)
+        <p class="cost"></p></label><br>
+        <label><input cost="225" type="radio" name="ram" onclick="update()" value="16GB Corsair Vengeance RGB PRO SL (8x2) (White Edition)">16GB Corsair Vengeance RGB PRO SL (8x2) (White Edition)
+        <p class="cost"></p></label><br>
+        <label><input cost="325" type="radio" name="ram" onclick="update()" value="32GB Corsair Vengeance RGB PRO SL (16x2) (White Edition)">32GB Corsair Vengeance RGB PRO SL (16x2) (White Edition)
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="cpu_cooling">
+        <p class="heading">CPU Cooling System</p>
+        <label><input checked cost="15" type="radio" name="cpu_cooling" onclick="update()" value="AIR COOLING : Intel / AMD stock cooling fan">AIR COOLING : Intel / AMD stock cooling fan
+        <p class="cost"></p></label><br>
+        <label><input cost"215" type="radio" name="cpu_cooling" onclick="update()" value="WATERCOOLING : NZXT Kraken X53 240mm">WATERCOOLING : NZXT Kraken X53 240mm
+        <p class="cost"></p></label><br>
+        <label><input cost"220" type="radio" name="cpu_cooling" onclick="update()" value="WATERCOOLING : NZXT Kraken X53 White 240mm">WATERCOOLING : NZXT Kraken X53 White 240mm
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="ssd">
+        <p class="heading">Solid State Drive (SSD)</p>
+        <label><input checked cost="70" type="radio" name="ssd" onclick="update()" value="512GB Samsung GEN4 Ultrafast SSD (R 6900 | W 5000)">512GB Samsung GEN4 Ultrafast SSD (R 6900 | W 5000)
+        <p class="cost"></p></label><br>
+        <label><input cost="220" type="radio" name="ssd" onclick="update()" value="1TB Samsung GEN4 Ultrafast SSD (R 7000 | W 5000)">1TB Samsung GEN4 Ultrafast SSD (R 7000 | W 5000)
+        <p class="cost"></p></label><br>
+        <label><input cost="595" type="radio" name="ssd" onclick="update()" value="2TB Samsung 980 PRO GEN4 SSD (R 7000 | W 5000)">2TB Samsung 980 PRO GEN4 SSD (R 7000 | W 5000)
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="hdd">
+        <p class="heading">Hard Drive (HDD)</p>
+        <label><input cost="0" type="radio" name="hdd" onclick="update()" value="None">None
+        <p class="cost"></p></label><br>
+        <label><input checked cost="65" type="radio" name="hdd" onclick="update()" value="1TB TOSHIBA 7200RPM HDD">1TB TOSHIBA 7200RPM HDD
+        <p class="cost"></p></label><br>
+        <label><input cost="90" type="radio" name="hdd" onclick="update()" value="2TB TOSHIBA 7200RPM HDD">2TB TOSHIBA 7200RPM HDD
+        <p class="cost"></p></label><br>
+        <label><input cost="130" type="radio" name="hdd" onclick="update()" value="3TB TOSHIBA 7200RPM HDD">3TB TOSHIBA 7200RPM HDD
+        <p class="cost"></p></label><br>
+        <label><input cost="160" type="radio" name="hdd" onclick="update()" value="4TB TOSHIBA 7200RPM HDD">4TB TOSHIBA 7200RPM HDD
+        <p class="cost"></p></label><br>
+      </div>
+
+      <div id="chasis_fan">
+        <p class="heading">Chasis Fan</p>
+        <label><input cost="350" type="radio" name="chasis_fan" onclick="update()" value="NZXT AER RGB 2 120mm + Digital Controller Pack (Fans X 6)">NZXT AER RGB 2 120mm + Digital Controller Pack (Fans X 6)
+        <p class="cost"></p></label><br>
+        <label><input checked cost="80" type="radio" name="chasis_fan" onclick="update()" value="ARCTIC P12 PWM Fans x 6">ARCTIC P12 PWM Fans x 6
+        <p class="cost"></p></label><br>
+        <label><input cost="190" type="radio" name="chasis_fan" onclick="update()" value="BEQUIET SILENT WINGS 3 120mm PWM X 6">BEQUIET SILENT WINGS 3 120mm PWM X 6
+        <p class="cost"></p></label><br>
+      </div>
+      </div>
+      <script src="../../Header.js" charset="utf-8"></script>
+      <script src="../../ShoppingCart/Cart.js" charset="utf-8"></script>
+      <script src="Product.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+div#body {
+  margin-top: 55px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+body {
+  background-color: black;
+}
+
+.display {
+  display: none;
+}
+
+div#body p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+div#body p.title {
+  font-size: 2em;
+}
+
+div#body p.suggestions span.input {
+  display: block;
+}
+
+div#body p span.input {
+  color: #AFAFAF;
+}
+
+div#body p.link {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+div#body button {
+  display: inline-block;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  width: 120px;
+  max-width: 120px;
+  height: 30px;
+  max-height: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  background-color: black;
+  font-size: 1em;
+}
+
+div#body a {
+  display: inline-block;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  width: 114px;
+  max-width: 113px;
+  height: 24px;
+  max-height: 24px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  background-color: black;
+  font-size: 1em;
+}
+
+div#ver {
+  margin-top: 100px;
+}
+
+div#ver span#name {
+  color: #AFAFAF;
+}
+
+hr {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin:0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+header nav {
+  background-color: #191716;
+  height: 52px;
+  max-height: 52px;
+  position: sticky;
+}
+
+header ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  vertical-align: text-top;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+header a {
+  color: grey;
+  text-decoration: none;
+}
+
+header div.main a {
+  font-size: 1.6em;
+}
+
+header a.current {
+  color: white;
+}
+
+header #logo {
+  position: fixed;
+  margin: 10px;
+}
+
+/* highligher */
+@media screen and (min-width: 801px) {
+  header li.open div.main a {
+    color: #f1f1f1;
+  }
+}
+
+/* red underline when hover */
+@media screen and (min-width: 801px) {
+  header div.main a::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: 300ms;
+  }
+
+  header li.open div.main a::after {
+    width: 100%;
+  }
+}
+
+/* dropdown with java */
+header div.dropdown {
+  display: none;
+  background-color: #1A1A1A;
+  padding: 10px;
+}
+
+@media screen and (min-width: 801px) {
+  header li.open div.dropdown {
+    display: block;
+  }
+
+  header li.open div.dropdown a:hover {
+    color: white;
+  }
+}
+
+/* Hamberger menu */
+header div.hamburger {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+header div.hamburger div {
+  background-color: grey;
+  margin: 5px;
+  width: 30px;
+  height: 3px;
+  transform: translate(-5%, -50%);
+  transition: all 0.7s ease;
+}
+
+/* Resizing */
+@media screen and (max-width: 800px) {
+  header div.hamburger {
+    display: block;
+  }
+
+  header ul {
+    background: #191716;
+    position: fixed;
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  header li {
+    display: block;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  header a:hover {
+    color: #f1f1f1;
+  }
+  header ul.list {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
+
+
+  /* appearing after the thing */
+  header ul li{
+      opacity: 0;
+  }
+  header ul li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  header ul li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  header ul li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  header ul li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  header ul li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  header ul li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  header ul li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+
+  ul.list li{
+      opacity: 1;
+  }
+
+  /* hamburger icon */
+  .toggle .bars1{
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .bars2{
+      transition: all 0s ease;
+      width: 0;
+  }
+
+  .toggle .bars3{
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+#cart_link {
+  position: fixed;
+  margin-left: 120px;
+}
